@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.000
+Simple Calculator — Project Demo
+
+00:00:03.000 --> 00:00:06.000
+Enter two numbers and choose an operation.
+
+00:00:06.000 --> 00:00:09.000
+Press equals to display the result: 7 plus 8 equals 15.
+
+00:00:09.000 --> 00:00:12.000
+The calculator also supports multiplication.
+
+00:00:12.000 --> 00:00:15.000
+The result of 9 multiplied by 6 is 54.
+
+00:00:15.000 --> 00:00:17.500
+You can also divide numbers.
+
+00:00:17.500 --> 00:00:20.000
+Press C to clear the display and start again.
