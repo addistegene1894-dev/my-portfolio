@@ -30,6 +30,32 @@
     <p>This is my portfolio website.</p>
     <p>Third-Year Software Engineering Student | Aspiring Full-Stack Developer</p>
 
+    <button type="button"
+    onclick="document.getElementById('hireDialog').showModal()">
+    Hire me
+</button>
+
+<dialog id="hireDialog">
+
+    <h2>Available for Internships</h2>
+
+    <p>
+        I am available for internships and freelance web projects
+        from June 2027.
+    </p>
+
+    <p>
+        <a href="#contact">Send me a message</a>
+        or
+        <a href="files/cv.pdf" download>download my CV</a>.
+    </p>
+
+    <button type="button"
+        onclick="document.getElementById('hireDialog').close()">
+        Close
+    </button>
+
+</dialog>
     <nav>
         <a href="index.html#about">About</a> |
         <a href="index.html#skills">Skills</a> |
@@ -130,6 +156,41 @@
             </li>
         </ul>
 
+        
+        <h3>Skill Levels</h3>
+
+<p>
+    <label for="lvl-html">HTML:</label>
+    <meter id="lvl-html" value="0.75" min="0" max="1">
+        75%
+    </meter>
+    75%
+</p>
+
+<p>
+    <label for="lvl-css">CSS:</label>
+    <meter id="lvl-css" value="0.60" min="0" max="1">
+        60%
+    </meter>
+    60%
+</p>
+
+<p>
+    <label for="lvl-js">JavaScript:</label>
+    <meter id="lvl-js" value="0.25" min="0" max="1"
+           low="0.3" high="0.7" optimum="1">
+        25%
+    </meter>
+    25%
+</p>
+
+<p>
+    <label for="lvl-cpp">C++:</label>
+    <meter id="lvl-cpp" value="0.65" min="0" max="1">
+        65%
+    </meter>
+    65%
+</p>
         <h3>My Learning Roadmap</h3>
 
         <ol type="1">
@@ -214,23 +275,33 @@
 
     </section>
 
-    <section id="education">
+   <section id="education">
 
-        <h2>Education</h2>
+    <h2>Education</h2>
 
-        <h3>BSc in Software Engineering</h3>
+    <h3>BSc in Software Engineering</h3>
 
-        <p>
-            Addis Ababa Science and Technology University (AASTU)
-        </p>
+    <p>
+        Addis Ababa Science and Technology University (AASTU)
+    </p>
 
-        <p>Third-year student</p>
+    <p>
+        <label for="degree">Degree progress:</label>
 
-        <p>
-            <a href="project.html">See all my projects →</a>
-        </p>
+        <progress id="degree" value="40" max="100">
+            40%
+        </progress>
 
-    </section>
+        40%
+    </p>
+
+    <p>Third-year student</p>
+
+    <p>
+        <a href="project.html">See all my projects →</a>
+    </p>
+
+</section>
 
     <section id="code-examples">
 
