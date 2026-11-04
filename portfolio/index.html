@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,31 +32,32 @@
     <p>Third-Year Software Engineering Student | Aspiring Full-Stack Developer</p>
 
     <button type="button"
-    onclick="document.getElementById('hireDialog').showModal()">
-    Hire me
-</button>
-
-<dialog id="hireDialog">
-
-    <h2>Available for Internships</h2>
-
-    <p>
-        I am available for internships and freelance web projects
-        from June 2027.
-    </p>
-
-    <p>
-        <a href="#contact">Send me a message</a>
-        or
-        <a href="files/cv.pdf" download>download my CV</a>.
-    </p>
-
-    <button type="button"
-        onclick="document.getElementById('hireDialog').close()">
-        Close
+        onclick="document.getElementById('hireDialog').showModal()">
+        Hire me
     </button>
 
-</dialog>
+    <dialog id="hireDialog">
+
+        <h2>Available for Internships</h2>
+
+        <p>
+            I am available for internships and freelance web projects
+            from June 2027.
+        </p>
+
+        <p>
+            <a href="#contact">Send me a message</a>
+            or
+            <a href="files/cv.pdf" download>download my <abbr title="Curriculum Vitae">CV</abbr></a>.
+        </p>
+
+        <button type="button"
+            onclick="document.getElementById('hireDialog').close()">
+            Close
+        </button>
+
+    </dialog>
+
     <nav>
         <a href="index.html#about">About</a> |
         <a href="index.html#skills">Skills</a> |
@@ -76,7 +78,8 @@
         <p>
             I am a 3<sup>rd</sup> year
             <strong>Software Engineering</strong> student
-            at Addis Ababa Science and Technology University.
+            at Addis Ababa Science and Technology University
+            (<abbr title="Addis Ababa Science and Technology University">AASTU</abbr>).
             I <em>really</em> enjoy coding and exploring new technologies.
             My goal is to
             <mark>become a full-stack web developer</mark>.
@@ -86,12 +89,19 @@
             Fun fact: I drink 2 liters of H<sub>2</sub>O
             while coding every day.
         </p>
-<h3>Hear my introduction</h3>
 
-<audio controls>
-    <source src="media/intro.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>    
+        <p>
+            My favourite tag is &lt;main&gt;, because it tells the browser
+            where the important content is &amp; helps screen readers.
+        </p>
+
+        <h3>Hear my introduction</h3>
+
+        <audio controls>
+            <source src="media/intro.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
     </section>
 
     <aside>
@@ -114,15 +124,17 @@
             <cite>Clean Code</cite> by Robert C. Martin because I want
             to learn how to write clear, readable, and well-organized code.
         </p>
-<h3>A talk I recommend</h3>
 
-<iframe
-    src="https://www.youtube.com/embed/nKIu9yen5nc"
-    width="560"
-    height="315"
-    title="YouTube video: What Most Schools Don't Teach"
-    allowfullscreen>
-</iframe>
+        <h3>A talk I recommend</h3>
+
+        <iframe
+            src="https://www.youtube.com/embed/nKIu9yen5nc"
+            width="560"
+            height="315"
+            title="YouTube video: What Most Schools Don't Teach"
+            allowfullscreen>
+        </iframe>
+
     </aside>
 
     <section id="skills">
@@ -140,7 +152,7 @@
 
             <li>Web Development
                 <ul type="circle">
-                    <li>HTML</li>
+                    <li><abbr title="HyperText Markup Language">HTML</abbr></li>
                     <li>CSS</li>
                     <li>JavaScript (currently learning)</li>
                 </ul>
@@ -156,41 +168,41 @@
             </li>
         </ul>
 
-        
         <h3>Skill Levels</h3>
 
-<p>
-    <label for="lvl-html">HTML:</label>
-    <meter id="lvl-html" value="0.75" min="0" max="1">
-        75%
-    </meter>
-    75%
-</p>
+        <p>
+            <label for="lvl-html">HTML:</label>
+            <meter id="lvl-html" value="0.75" min="0" max="1">
+                75%
+            </meter>
+            75%
+        </p>
 
-<p>
-    <label for="lvl-css">CSS:</label>
-    <meter id="lvl-css" value="0.60" min="0" max="1">
-        60%
-    </meter>
-    60%
-</p>
+        <p>
+            <label for="lvl-css">CSS:</label>
+            <meter id="lvl-css" value="0.60" min="0" max="1">
+                60%
+            </meter>
+            60%
+        </p>
 
-<p>
-    <label for="lvl-js">JavaScript:</label>
-    <meter id="lvl-js" value="0.25" min="0" max="1"
-           low="0.3" high="0.7" optimum="1">
-        25%
-    </meter>
-    25%
-</p>
+        <p>
+            <label for="lvl-js">JavaScript:</label>
+            <meter id="lvl-js" value="0.25" min="0" max="1"
+                   low="0.3" high="0.7" optimum="1">
+                25%
+            </meter>
+            25%
+        </p>
 
-<p>
-    <label for="lvl-cpp">C++:</label>
-    <meter id="lvl-cpp" value="0.65" min="0" max="1">
-        65%
-    </meter>
-    65%
-</p>
+        <p>
+            <label for="lvl-cpp">C++:</label>
+            <meter id="lvl-cpp" value="0.65" min="0" max="1">
+                65%
+            </meter>
+            65%
+        </p>
+
         <h3>My Learning Roadmap</h3>
 
         <ol type="1">
@@ -275,33 +287,34 @@
 
     </section>
 
-   <section id="education">
+    <section id="education">
 
-    <h2>Education</h2>
+        <h2>Education</h2>
 
-    <h3>BSc in Software Engineering</h3>
+        <h3>BSc in Software Engineering</h3>
 
-    <p>
-        Addis Ababa Science and Technology University (AASTU)
-    </p>
+        <p>
+            Addis Ababa Science and Technology University,
+            <time datetime="2023-09">September 2023</time> – present
+        </p>
 
-    <p>
-        <label for="degree">Degree progress:</label>
+        <p>
+            <label for="degree">Degree progress:</label>
 
-        <progress id="degree" value="40" max="100">
+            <progress id="degree" value="40" max="100">
+                40%
+            </progress>
+
             40%
-        </progress>
+        </p>
 
-        40%
-    </p>
+        <p>Third-year student</p>
 
-    <p>Third-year student</p>
+        <p>
+            <a href="project.html">See all my projects →</a>
+        </p>
 
-    <p>
-        <a href="project.html">See all my projects →</a>
-    </p>
-
-</section>
+    </section>
 
     <section id="code-examples">
 
@@ -446,7 +459,7 @@ int main() {
 
         <p>
             Phone:
-            <a href="tel:+251954530661">+251 954530661</a>
+            <a href="tel:+251954530661">+251&nbsp;954&nbsp;530&nbsp;661</a>
         </p>
 
         <p>
@@ -510,116 +523,117 @@ int main() {
 
         <h3>Where I study</h3>
 
-<iframe
-    src="https://www.google.com/maps?q=Addis+Ababa+Science+and+Technology+University,+Addis+Ababa,+Ethiopia&output=embed"
-    width="600"
-    height="300"
-    title="Map of Addis Ababa Science and Technology University campus">
-</iframe>
-<h3>Send me a message</h3>
+        <iframe
+            src="https://www.google.com/maps?q=Addis+Ababa+Science+and+Technology+University,+Addis+Ababa,+Ethiopia&output=embed"
+            width="600"
+            height="300"
+            title="Map of Addis Ababa Science and Technology University campus">
+        </iframe>
 
-<form action="thank-you.html" method="post" enctype="multipart/form-data">
+        <h3>Send me a message</h3>
 
-    <fieldset>
-        <legend>Your Details</legend>
+        <form action="thank-you.html" method="post" enctype="multipart/form-data">
 
-        <label for="fullname">Full name:</label>
-        <input type="text" id="fullname" name="fullname" required>
-        <br><br>
+            <fieldset>
+                <legend>Your Details</legend>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-    </fieldset>
+                <label for="fullname">Full name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+                <br><br>
 
-    <fieldset>
-        <legend>Project Details</legend>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
 
-        <label for="phone">Phone (optional):</label>
-        <input type="text" id="phone" name="phone"
-               pattern="0[79][0-9]{8}"
-               title="10 digits starting with 09 or 07">
-        <br><br>
+            <fieldset>
+                <legend>Project Details</legend>
 
-        <p>Preferred contact method:</p>
+                <label for="phone">Phone (optional):</label>
+                <input type="text" id="phone" name="phone"
+                       pattern="0[79][0-9]{8}"
+                       title="10 digits starting with 09 or 07">
+                <br><br>
 
-        <input type="radio" id="by-email" name="contact-method"
-               value="email" checked>
-        <label for="by-email">Email</label>
+                <p>Preferred contact method:</p>
 
-        <input type="radio" id="by-phone" name="contact-method"
-               value="phone">
-        <label for="by-phone">Phone</label>
-        <br><br>
+                <input type="radio" id="by-email" name="contact-method"
+                       value="email" checked>
+                <label for="by-email">Email</label>
 
-        <label for="meeting">Preferred meeting date:</label>
-        <input type="date" id="meeting" name="meeting"
-               min="2026-11-01">
-        <br><br>
+                <input type="radio" id="by-phone" name="contact-method"
+                       value="phone">
+                <label for="by-phone">Phone</label>
+                <br><br>
 
-        <label for="weeks">Project length (weeks):</label>
-        <input type="number" id="weeks" name="weeks"
-               min="1" max="52" step="1">
-        <br><br>
+                <label for="meeting">Preferred meeting date:</label>
+                <input type="date" id="meeting" name="meeting"
+                       min="2026-11-01">
+                <br><br>
 
-        <label for="brief">Attach a project brief:</label>
-        <input type="file" id="brief" name="brief">
-        <br><br>
+                <label for="weeks">Project length (weeks):</label>
+                <input type="number" id="weeks" name="weeks"
+                       min="1" max="52" step="1">
+                <br><br>
 
-        <label for="colour">Preferred website colour:</label>
-        <input type="color" id="colour" name="colour"
-               value="#1f5fa8">
-        <br><br>
+                <label for="brief">Attach a project brief:</label>
+                <input type="file" id="brief" name="brief">
+                <br><br>
 
-        <label for="rating">
-            How much do you like my portfolio? (1–10)
-        </label>
-        <input type="range" id="rating" name="rating"
-               min="1" max="10" value="7">
-        <br><br>
+                <label for="colour">Preferred website colour:</label>
+                <input type="color" id="colour" name="colour"
+                       value="#1f5fa8">
+                <br><br>
 
-        <label for="budget">Your budget (ETB):</label>
-        <input type="number" id="budget" name="budget"
-               min="1000" step="500">
+                <label for="rating">
+                    How much do you like my portfolio? (1–10)
+                </label>
+                <input type="range" id="rating" name="rating"
+                       min="1" max="10" value="7">
+                <br><br>
 
-    </fieldset>
+                <label for="budget">Your budget (ETB):</label>
+                <input type="number" id="budget" name="budget"
+                       min="1000" step="500">
 
-    <fieldset>
-        <legend>Your Message</legend>
+            </fieldset>
 
-        <label for="reason">Reason for contacting me:</label>
+            <fieldset>
+                <legend>Your Message</legend>
 
-        <select id="reason" name="reason" required>
-            <optgroup label="Work">
-                <option value="internship">Internship offer</option>
-                <option value="freelance">Freelance project</option>
-                <option value="job">Full-time job</option>
-            </optgroup>
+                <label for="reason">Reason for contacting me:</label>
 
-            <optgroup label="Study">
-                <option value="group-project">Group project</option>
-                <option value="tutoring">Tutoring</option>
-            </optgroup>
+                <select id="reason" name="reason" required>
+                    <optgroup label="Work">
+                        <option value="internship">Internship offer</option>
+                        <option value="freelance">Freelance project</option>
+                        <option value="job">Full-time job</option>
+                    </optgroup>
 
-            <option value="other">Other</option>
-        </select>
-        <br><br>
+                    <optgroup label="Study">
+                        <option value="group-project">Group project</option>
+                        <option value="tutoring">Tutoring</option>
+                    </optgroup>
 
-        <label for="message">Message:</label><br>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
 
-        <textarea id="message" name="message"
-                  rows="6" cols="40" required></textarea>
+                <label for="message">Message:</label><br>
 
-        <br>
+                <textarea id="message" name="message"
+                          rows="6" cols="40" required></textarea>
 
-        <input type="checkbox" id="copy" name="copy" value="yes">
-        <label for="copy">Send me a copy of this message</label>
+                <br>
 
-    </fieldset>
+                <input type="checkbox" id="copy" name="copy" value="yes">
+                <label for="copy">Send me a copy of this message</label>
 
-    <button type="submit">Send Message</button>
-    <button type="reset">Clear</button>
+            </fieldset>
 
-</form>
+            <button type="submit">Send Message</button>
+            <button type="reset">Clear</button>
+
+        </form>
 
     </section>
 
@@ -627,7 +641,9 @@ int main() {
 
 <footer>
 
-    <p>Copyright 2026 Addis Tegene. All rights reserved.</p>
+    <p>&copy; 2026 Addis Tegene. All rights reserved.</p>
+
+    <p>Last updated: <time datetime="2026-11-05">5 November 2026</time></p>
 
 </footer>
 
