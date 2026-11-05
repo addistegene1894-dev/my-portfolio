@@ -1,22 +1,19 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:03.000
-Simple Calculator — Project Demo
+00:00:00.000 --> 00:00:02.991
+This is my simple calculator project.
 
-00:00:03.000 --> 00:00:06.000
-Enter two numbers and choose an operation.
+00:00:03.271 --> 00:00:06.489
+I enter two numbers, twelve and eight.
 
-00:00:06.000 --> 00:00:09.000
-Press equals to display the result: 7 plus 8 equals 15.
+00:00:06.769 --> 00:00:10.357
+Then I choose addition, and the answer is twenty.
 
-00:00:09.000 --> 00:00:12.000
-The calculator also supports multiplication.
+00:00:10.637 --> 00:00:14.713
+I can also subtract, multiply, or divide.
 
-00:00:12.000 --> 00:00:15.000
-The result of 9 multiplied by 6 is 54.
+00:00:14.993 --> 00:00:19.505
+The calculator checks the input and displays the result here.
 
-00:00:15.000 --> 00:00:17.500
-You can also divide numbers.
-
-00:00:17.500 --> 00:00:20.000
-Press C to clear the display and start again.
+00:00:19.785 --> 00:00:23.237
+That is the basic idea behind my calculator.
