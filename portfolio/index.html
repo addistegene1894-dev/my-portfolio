@@ -35,9 +35,10 @@
          height="200">
 
     <p>This is my portfolio website.</p>
-    <p>Third-Year Software Engineering Student | Aspiring Full-Stack Developer</p>
+    <p class="tagline">Third-Year Software Engineering Student | Aspiring Full-Stack Developer</p>
 
     <button type="button"
+        class="btn"
         onclick="document.getElementById('hireDialog').showModal()">
         Hire me
     </button>
@@ -58,6 +59,7 @@
         </p>
 
         <button type="button"
+            class="btn"
             onclick="document.getElementById('hireDialog').close()">
             Close
         </button>
@@ -248,7 +250,7 @@
 
         <h2>Projects</h2>
 
-        <article id="movie">
+        <article id="movie" class="card">
 
             <h3>Movie Explorer</h3>
 
@@ -264,7 +266,7 @@
 
         </article>
 
-        <article id="calculator">
+        <article id="calculator" class="card">
 
             <h3>Simple Calculator</h3>
 
@@ -281,7 +283,7 @@
 
         </article>
 
-        <article id="library">
+        <article id="library" class="card">
 
             <h3>Library Management System</h3>
 
@@ -643,8 +645,8 @@ int main() {
 
             </fieldset>
 
-            <button type="submit">Send Message</button>
-            <button type="reset">Clear</button>
+            <button type="submit" class="btn">Send Message</button>
+            <button type="reset" class="btn btn-secondary">Clear</button>
 
         </form>
 
