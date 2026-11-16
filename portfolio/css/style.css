@@ -29,7 +29,7 @@ body {
     line-height: 1.6;
 }
 
-/* ---------- Layout ---------- */
+
 
 main {
     max-width: 700px;
@@ -40,15 +40,25 @@ main {
 header {
     text-align: center;
     padding: 2rem 1rem;
+
+   
+    background-image:
+        url("../images/pattern.png"),
+        linear-gradient(135deg, #2563eb, #0b2d55);
+    color: white;
 }
 
 footer {
     text-align: center;
     padding: 1.5rem 1rem;
     margin-top: 3rem;
+
+    /* Lab 20: Dark footer */
+    background-color: #22313f;
+    color: rgba(255, 255, 255, 0.8);
 }
 
-/* ---------- Headings ---------- */
+
 
 h1, h2, h3 {
     line-height: 1.2;
@@ -84,7 +94,7 @@ h3 {
     font-size: 1.2rem;
 }
 
-/* ---------- Display & Alignment ---------- */
+
 
 #logo,
 header img {
@@ -123,9 +133,32 @@ label[for^="lvl"] {
     letter-spacing: 1px;
 }
 
-/* ---------- Buttons ---------- */
+
+
+header h1 {
+    color: white;
+}
+
+header .tagline {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+header nav a:link,
+header nav a:visited {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+
 
 .btn {
+    
+    background-image: linear-gradient(135deg, #2563eb, #1d4ed8);
+
     background-color: #2563eb;
     color: white;
     font-family: inherit;
@@ -156,7 +189,18 @@ label[for^="lvl"] {
     letter-spacing: 1px;
 }
 
-/* ---------- Spacing & Borders ---------- */
+
+header .btn {
+    background-color: hsl(37, 91%, 55%);
+    background-image: none;
+    color: #22313f;
+}
+
+header .btn:hover {
+    background-color: #e59a06;
+}
+
+
 
 section,
 aside {
@@ -166,6 +210,13 @@ aside {
 
 aside {
     border-left: 6px solid hsl(37, 91%, 55%);
+
+   
+    background-image: radial-gradient(
+        circle at top left,
+        #fff3dc,
+        white 70%
+    );
 }
 
 .card {
@@ -191,6 +242,15 @@ video {
     height: auto;
 }
 
+
+.card img {
+    opacity: 0.85;
+}
+
+.card:hover img {
+    opacity: 1;
+}
+
 iframe {
     display: block;
     max-width: 100%;
@@ -202,7 +262,7 @@ fieldset {
     border: 2px solid #d5dde8;
 }
 
-/* ---------- Form Controls ---------- */
+
 
 input[type="text"],
 input[type="email"],
@@ -222,13 +282,29 @@ abbr[title] {
     text-decoration: underline dotted;
 }
 
+
 #contact {
-    background-color: #eff6ff;
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.88),
+            rgba(255, 255, 255, 0.88)
+        ),
+        url("../images/contact-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     padding: 2rem;
     border-radius: 12px;
 }
 
-/* ---------- Text & Links ---------- */
+
+
+dialog::backdrop {
+    background-color: rgba(11, 45, 85, 0.6);
+}
+
+
 
 .card > p {
     color: #5a6b7d;
@@ -299,7 +375,7 @@ pre code {
     padding: 0;
 }
 
-/* ---------- Tables ---------- */
+
 
 table {
     border-collapse: collapse;
@@ -319,7 +395,7 @@ caption {
     padding: 0.5rem;
 }
 
-/* ---------- Lists ---------- */
+
 
 tbody tr:nth-child(even) {
     background-color: #eef2f7;
