@@ -12,7 +12,7 @@ Light #f8fafc (Clean slate/off-white background)
 /* ---------- Base ---------- */
 
 html {
-    font-size: 16px; /* 1rem = 16px everywhere */
+    font-size: 16px; 
 }
 
 body {
@@ -20,7 +20,7 @@ body {
     color: #0f172a; 
     font-family: 'Inter', Arial, sans-serif;
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.6; 
 }
 
 
@@ -31,7 +31,7 @@ h1, h2, h3 {
 
 h1 {
     color: #2563eb; 
-    font-size: 2.5rem; /* 40px */
+    font-size: 2.5rem; 
     text-align: center;
     font-weight: 700;
     text-shadow: 2px 2px 8px rgba(37, 99, 235, 0.15);
@@ -39,9 +39,18 @@ h1 {
 
 h2 {
     color: #1d4ed8; 
-    font-size: 1.8rem;
+    font-size: 1.8rem; 
     text-transform: uppercase;
     letter-spacing: 1.5px;
+}
+
+h2::before {
+    content: "// ";
+    color: #f59e0b; 
+}
+
+h2 + p::first-line {
+    font-weight: 600;
 }
 
 h3 {
@@ -61,7 +70,7 @@ h3 {
 .btn {
     background-color: #2563eb;
     color: white;
-    font-family: inherit; /* buttons do not inherit fonts by default */
+    font-family: inherit; 
     font-size: 1rem;
     padding: 0.6rem 1.2rem;
     border: none;
@@ -80,7 +89,12 @@ h3 {
 }
 
 .btn-secondary:hover {
-    background-color: #475569;
+    background-color: #445566;
+}
+
+[class*="btn"] {
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .card {
@@ -89,12 +103,37 @@ h3 {
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
     margin-bottom: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    border: 2px solid #2563eb;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.4rem;
+    border-radius: 4px;
+}
+
+abbr[title] {
+    cursor: help;
+    text-decoration: underline dotted;
 }
 
 
 
 #contact {
-    background-color: #eff6ff;
+    background-color: #eff6ff; 
     padding: 2rem;
     border-radius: 12px;
 }
@@ -106,6 +145,10 @@ nav a {
     font-size: 0.9rem;
 }
 
+
+nav a::after {
+    content: none;
+}
 
 .card > p {
     color: #5a6b7d;
@@ -122,6 +165,45 @@ legend ~ label {
 }
 
 
+a[href^="https"]::after {
+    content: " ↗"; 
+}
+
+a[href^="mailto"]::before {
+    content: "✉ ";
+}
+
+a[href^="tel"]::before {
+    content: "☎ ";
+}
+
+a[download]::before {
+    content: "⬇ ";
+}
+
+
+a[href$=".html"]::after {
+    content: " →";
+}
+
+
+
+a:link { color: #2563eb; } 
+a:visited { color: #5b21b6; } 
+a:hover { color: #d97706; text-decoration: underline; } 
+a:active { color: #b91c1c; } 
+
+
+
+ol li:first-child {
+    font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eef2f7;
+}
+
+
 
 mark {
     background-color: rgba(245, 158, 11, 0.25); 
@@ -131,12 +213,7 @@ mark {
 }
 
 a {
-    color: #2563eb;
     text-decoration: none; 
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 blockquote {
