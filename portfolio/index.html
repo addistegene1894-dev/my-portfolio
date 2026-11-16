@@ -1,28 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description" content="Portfolio of Addis Tegene, Software Engineering student and aspiring web developer in Addis Ababa.">
-
     <meta name="keywords" content="Addis Tegene, portfolio, software engineering, web developer, HTML">
-
     <meta name="author" content="Addis Tegene">
-
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
     <title>Addis Tegene | Portfolio</title>
 </head>
 
 <body>
 
 <header>
-
-
     <canvas id="logo" width="120" height="120">
         Addis Tegene logo
     </canvas>
@@ -44,7 +37,6 @@
     </button>
 
     <dialog id="hireDialog">
-
         <h2>Available for Internships</h2>
 
         <p>
@@ -63,24 +55,21 @@
             onclick="document.getElementById('hireDialog').close()">
             Close
         </button>
-
     </dialog>
 
     <nav>
-        <a href="index.html#about">About</a> |
-        <a href="index.html#skills">Skills</a> |
-        <a href="index.html#projects">Projects</a> |
-        <a href="index.html#education">Education</a> |
-        <a href="index.html#contact">Contact</a> |
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#contact">Contact</a>
         <a href="project.html">All Projects</a>
     </nav>
-
 </header>
 
 <main>
 
     <section id="about">
-
         <h2>About Me</h2>
 
         <p>
@@ -109,11 +98,9 @@
             <source src="media/intro.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-
     </section>
 
     <aside>
-
         <h2>What Inspires Me</h2>
 
         <blockquote>
@@ -142,16 +129,14 @@
             title="YouTube video: What Most Schools Don't Teach"
             allowfullscreen>
         </iframe>
-
     </aside>
 
     <section id="skills">
-
         <h2>Skills</h2>
 
         <ul>
             <li>Programming Languages
-                <ul type="square">
+                <ul>
                     <li>C++</li>
                     <li>Java</li>
                     <li>Python (basic knowledge)</li>
@@ -159,7 +144,7 @@
             </li>
 
             <li>Web Development
-                <ul type="circle">
+                <ul>
                     <li><abbr title="HyperText Markup Language">HTML</abbr></li>
                     <li>CSS</li>
                     <li>JavaScript (currently learning)</li>
@@ -180,38 +165,29 @@
 
         <p>
             <label for="lvl-html">HTML:</label>
-            <meter id="lvl-html" value="0.75" min="0" max="1">
-                75%
-            </meter>
+            <meter id="lvl-html" value="0.75" min="0" max="1">75%</meter>
             75%
         </p>
 
         <p>
             <label for="lvl-css">CSS:</label>
-            <meter id="lvl-css" value="0.60" min="0" max="1">
-                60%
-            </meter>
+            <meter id="lvl-css" value="0.60" min="0" max="1">60%</meter>
             60%
         </p>
 
         <p>
             <label for="lvl-js">JavaScript:</label>
             <meter id="lvl-js" value="0.25" min="0" max="1"
-                    low="0.3" high="0.7" optimum="1">
-                25%
-            </meter>
+                   low="0.3" high="0.7" optimum="1">25%</meter>
             25%
         </p>
 
         <p>
             <label for="lvl-cpp">C++:</label>
-            <meter id="lvl-cpp" value="0.65" min="0" max="1">
-                65%
-            </meter>
+            <meter id="lvl-cpp" value="0.65" min="0" max="1">65%</meter>
             65%
         </p>
 
-        
         <h3>My Skills Chart</h3>
 
         <canvas id="skillChart" width="300" height="150">
@@ -220,7 +196,7 @@
 
         <h3>My Learning Roadmap</h3>
 
-        <ol type="1">
+        <ol>
             <li>Build a strong foundation in HTML</li>
             <li>Learn CSS styling and responsive layouts</li>
             <li>Understand JavaScript and DOM manipulation</li>
@@ -243,15 +219,12 @@
             <dt>Code::Blocks</dt>
             <dd>An IDE I use to write, compile, and run C++ programs.</dd>
         </dl>
-
     </section>
 
     <section id="projects">
-
         <h2>Projects</h2>
 
         <article id="movie" class="card">
-
             <h3>Movie Explorer</h3>
 
             <img src="images/project-movie-explorer.png"
@@ -263,11 +236,9 @@
                 A web project that allows users to explore movies,
                 view movie details, and discover films they might enjoy.
             </p>
-
         </article>
 
         <article id="calculator" class="card">
-
             <h3>Simple Calculator</h3>
 
             <img src="images/project-calculator.png"
@@ -280,11 +251,9 @@
                 operations, including addition, subtraction,
                 multiplication, and division.
             </p>
-
         </article>
 
         <article id="library" class="card">
-
             <h3>Library Management System</h3>
 
             <img src="images/project-library.png"
@@ -297,13 +266,10 @@
                 and support basic library activities such as
                 borrowing and returning books.
             </p>
-
         </article>
-
     </section>
 
     <section id="education">
-
         <h2>Education</h2>
 
         <h3>BSc in Software Engineering</h3>
@@ -315,11 +281,7 @@
 
         <p>
             <label for="degree">Degree progress:</label>
-
-            <progress id="degree" value="38" max="100">
-                38%
-            </progress>
-
+            <progress id="degree" value="38" max="100">38%</progress>
             38%
         </p>
 
@@ -328,11 +290,9 @@
         <p>
             <a href="project.html">See all my projects →</a>
         </p>
-
     </section>
 
     <section id="code-examples">
-
         <h2>C++ Code Examples</h2>
 
         <h3>My First Program</h3>
@@ -359,26 +319,21 @@
 using namespace std;
 
 int main() {
-
     string name;
 
     cout &lt;&lt; "Enter your name: ";
-
     cin &gt;&gt; name;
 
     cout &lt;&lt; "Hello, " &lt;&lt; name &lt;&lt; "!" &lt;&lt; endl;
 
     return 0;
 }</code></pre>
-
     </section>
 
     <section id="academic-record">
-
         <h2>Academic Record</h2>
 
-        <table border="1" cellpadding="8" cellspacing="0">
-
+        <table>
             <caption>Academic Record — BSc in Software Engineering</caption>
 
             <thead>
@@ -392,7 +347,6 @@ int main() {
             </thead>
 
             <tbody>
-
                 <tr>
                     <th rowspan="4">Year 2</th>
                     <td rowspan="2">Semester I</td>
@@ -433,7 +387,6 @@ int main() {
                     <td>3</td>
                     <td>A</td>
                 </tr>
-
             </tbody>
 
             <tfoot>
@@ -443,13 +396,10 @@ int main() {
                     <th></th>
                 </tr>
             </tfoot>
-
         </table>
-
     </section>
 
     <section id="contact">
-
         <h2>Contact Me</h2>
 
         <p>
@@ -508,7 +458,6 @@ int main() {
         >
 
         <map name="connectmap">
-
             <area
                 shape="rect"
                 coords="20,40,180,160"
@@ -533,7 +482,6 @@ int main() {
                 href="mailto:addistegene5537@gmail.com"
                 alt="Email"
             >
-
         </map>
 
         <h3>Where I study</h3>
@@ -565,8 +513,8 @@ int main() {
 
                 <label for="phone">Phone (optional):</label>
                 <input type="text" id="phone" name="phone"
-                        pattern="0[79][0-9]{8}"
-                        title="10 digits starting with 09 or 07">
+                       pattern="0[79][0-9]{8}"
+                       title="10 digits starting with 09 or 07">
                 <br><br>
 
                 <p>Preferred contact method:</p>
@@ -609,7 +557,6 @@ int main() {
                 <label for="budget">Your budget (ETB):</label>
                 <input type="number" id="budget" name="budget"
                        min="1000" step="500">
-
             </fieldset>
 
             <fieldset>
@@ -642,29 +589,21 @@ int main() {
 
                 <input type="checkbox" id="copy" name="copy" value="yes">
                 <label for="copy">Send me a copy of this message</label>
-
             </fieldset>
 
             <button type="submit" class="btn">Send Message</button>
             <button type="reset" class="btn btn-secondary">Clear</button>
-
         </form>
-
     </section>
 
 </main>
 
 <footer>
-
     <p>&copy; 2026 Addis Tegene. All rights reserved.</p>
-
     <p>Last updated: <time datetime="2026-11-05">5 November 2026</time></p>
-
 </footer>
 
-
 <script>
-
     const canvas = document.getElementById('logo');
     const ctx = canvas.getContext('2d');
 
@@ -682,17 +621,13 @@ int main() {
     ctx.textBaseline = "middle";
     ctx.fillText("AT", 60, 62);
 
-
     const chart = document.getElementById('skillChart');
     const chartCtx = chart.getContext('2d');
 
     chartCtx.fillStyle = "#2563eb";
     chartCtx.fillRect(20, 40, 35, 90);
-
     chartCtx.fillRect(90, 58, 35, 72);
-
     chartCtx.fillRect(160, 100, 35, 30);
-
     chartCtx.fillRect(230, 52, 35, 78);
 
     chartCtx.fillStyle = "#0f172a";
@@ -703,7 +638,6 @@ int main() {
     chartCtx.fillText("CSS", 107, 145);
     chartCtx.fillText("JS", 177, 145);
     chartCtx.fillText("C++", 247, 145);
-
 </script>
 
 </body>

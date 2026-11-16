@@ -1,3 +1,4 @@
+
 /* ==========================================
    Portfolio stylesheet — Addis Tegene
    ========================================== */
@@ -9,20 +10,45 @@ Accent #f59e0b (Warm amber highlight)
 Light #f8fafc (Clean slate/off-white background)
 */
 
-/* ---------- Base ---------- */
+/* ---------- Reset & Base ---------- */
+
+* {
+    box-sizing: border-box;
+}
 
 html {
-    font-size: 16px; 
+    font-size: 16px;
 }
 
 body {
+    margin: 0;
     background-color: #f8fafc;
-    color: #0f172a; 
+    color: #0f172a;
     font-family: 'Inter', Arial, sans-serif;
     font-size: 1rem;
-    line-height: 1.6; 
+    line-height: 1.6;
 }
 
+/* ---------- Layout ---------- */
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+}
+
+/* ---------- Headings ---------- */
 
 h1, h2, h3 {
     line-height: 1.2;
@@ -30,23 +56,23 @@ h1, h2, h3 {
 }
 
 h1 {
-    color: #2563eb; 
-    font-size: 2.5rem; 
+    color: #2563eb;
+    font-size: 2.5rem;
     text-align: center;
     font-weight: 700;
     text-shadow: 2px 2px 8px rgba(37, 99, 235, 0.15);
 }
 
 h2 {
-    color: #1d4ed8; 
-    font-size: 1.8rem; 
+    color: #1d4ed8;
+    font-size: 1.8rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
 
 h2::before {
     content: "// ";
-    color: #f59e0b; 
+    color: #f59e0b;
 }
 
 h2 + p::first-line {
@@ -54,11 +80,41 @@ h2 + p::first-line {
 }
 
 h3 {
-    color: #1e40af; 
-    font-size: 1.2rem; 
+    color: #1e40af;
+    font-size: 1.2rem;
 }
 
+/* ---------- Display & Alignment ---------- */
 
+#logo,
+header img {
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+header img {
+    border: 4px solid white;
+    border-radius: 50%;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    border: 2px solid #1f5fa8;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+nav a::after {
+    content: none;
+}
+
+label[for^="lvl"] {
+    display: inline-block;
+    width: 7rem;
+}
 
 .tagline {
     text-align: center;
@@ -67,12 +123,15 @@ h3 {
     letter-spacing: 1px;
 }
 
+/* ---------- Buttons ---------- */
+
 .btn {
     background-color: #2563eb;
     color: white;
-    font-family: inherit; 
+    font-family: inherit;
     font-size: 1rem;
     padding: 0.6rem 1.2rem;
+    margin: 0.5rem 0.25rem 0 0;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -97,20 +156,53 @@ h3 {
     letter-spacing: 1px;
 }
 
-.card {
-    background-color: white;
+/* ---------- Spacing & Borders ---------- */
+
+section,
+aside {
+    margin: 2rem 0;
     padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
-    margin-bottom: 1.5rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+aside {
+    border-left: 6px solid hsl(37, 91%, 55%);
+}
+
+.card {
+    background-color: white;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border: 1px solid #d5dde8;
+    border-left: 4px solid #f59e0b;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
 .card:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
 }
+
+.card img,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    display: block;
+    max-width: 100%;
+}
+
+fieldset {
+    margin: 0 0 1rem;
+    padding: 1rem;
+    border: 2px solid #d5dde8;
+}
+
+/* ---------- Form Controls ---------- */
 
 input[type="text"],
 input[type="email"],
@@ -130,43 +222,28 @@ abbr[title] {
     text-decoration: underline dotted;
 }
 
-
-
 #contact {
-    background-color: #eff6ff; 
+    background-color: #eff6ff;
     padding: 2rem;
     border-radius: 12px;
 }
 
-
-nav a {
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-}
-
-
-nav a::after {
-    content: none;
-}
+/* ---------- Text & Links ---------- */
 
 .card > p {
     color: #5a6b7d;
 }
 
-
 h2 + p {
     font-size: 1.1rem;
 }
-
 
 legend ~ label {
     font-weight: 600;
 }
 
-
 a[href^="https"]::after {
-    content: " ↗"; 
+    content: " ↗";
 }
 
 a[href^="mailto"]::before {
@@ -181,43 +258,28 @@ a[download]::before {
     content: "⬇ ";
 }
 
-
 a[href$=".html"]::after {
     content: " →";
 }
 
-
-
-a:link { color: #2563eb; } 
-a:visited { color: #5b21b6; } 
-a:hover { color: #d97706; text-decoration: underline; } 
-a:active { color: #b91c1c; } 
-
-
-
-ol li:first-child {
-    font-weight: 600;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #eef2f7;
-}
-
-
+a:link { color: #2563eb; }
+a:visited { color: #5b21b6; }
+a:hover { color: #d97706; text-decoration: underline; }
+a:active { color: #b91c1c; }
 
 mark {
-    background-color: rgba(245, 158, 11, 0.25); 
+    background-color: rgba(245, 158, 11, 0.25);
     color: #0f172a;
     padding: 0.1em 0.3em;
     border-radius: 4px;
 }
 
 a {
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 blockquote {
-    font-size: 1.2em; 
+    font-size: 1.2em;
     font-style: italic;
     border-left: 4px solid #2563eb;
     margin-left: 0;
@@ -235,4 +297,38 @@ code, pre {
 pre code {
     background-color: transparent;
     padding: 0;
+}
+
+/* ---------- Tables ---------- */
+
+table {
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background-color: white;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #c5d0de;
+    padding: 0.5rem 0.75rem;
+}
+
+caption {
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+/* ---------- Lists ---------- */
+
+tbody tr:nth-child(even) {
+    background-color: #eef2f7;
+}
+
+ul ul {
+    list-style-type: square;
+}
+
+ol li:first-child {
+    font-weight: 600;
 }
