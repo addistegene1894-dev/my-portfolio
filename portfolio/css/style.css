@@ -2,10 +2,82 @@
    Portfolio stylesheet — Addis Tegene
    ========================================== */
 
+/* Palette
+Primary #2563eb (Modern tech electric blue)
+Dark #0f172a (Deep professional slate text)
+Accent #f59e0b (Warm amber highlight)
+Light #f8fafc (Clean slate/off-white background)
+*/
+
 /* ---------- Base ---------- */
 
+html {
+    font-size: 16px; /* 1rem = 16px everywhere */
+}
+
 body {
-    background-color: #f0f2f8;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #263248;
+    background-color: #f8fafc;
+    color: #0f172a; 
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6; /* 1.6 × the font size: easier to read */
+}
+
+h1 {
+    color: #2563eb; 
+    font-size: 2.5rem; /* 40px */
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(37, 99, 235, 0.15);
+}
+
+h2 {
+    color: #1d4ed8; 
+    font-size: 1.8rem; /* about 29px */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+h3 {
+    color: #1e40af; 
+    font-size: 1.2rem; /* about 19px */
+    font-weight: 600;
+}
+
+mark {
+    background-color: rgba(245, 158, 11, 0.25); /* see-through amber */
+    color: #0f172a;
+    padding: 0.1em 0.3em;
+    border-radius: 4px;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none; /* removes the underline */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    font-size: 1.2em; /* 1.2 × the size of its parent */
+    font-style: italic;
+    border-left: 4px solid #2563eb;
+    margin-left: 0;
+    padding-left: 1rem;
+    color: #334155;
+}
+
+code, pre {
+    font-family: 'Courier New', monospace;
+    background-color: #e2e8f0;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
 }
